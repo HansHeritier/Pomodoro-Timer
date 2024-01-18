@@ -1,0 +1,199 @@
+:root {
+  --color-primary: #d40d39;
+  --color-text: rgb(242, 242, 242);
+}
+
+body {
+  margin: 0;
+  background-size: cover;
+  background-image: linear-gradient(
+    to right top,
+    #0d0514,
+    #180718,
+    #220819,
+    #2b0817,
+    #340711
+  );
+}
+
+
+.container-general {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin:0 auto;
+  width: 100%;
+  font-family: "Roboto", serif;
+  font-size: 1.5rem;
+}
+
+.container-title {
+  font-size: 1.2rem;
+  color: var(--color-text);
+ 
+}
+
+.container-title p {
+  margin-bottom: 2em;
+}
+
+.container-button button {
+  color: var(--color-text);
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color-primary);
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1em 1em 1em 1em;
+  padding: 10px 20px 10px 20px;
+  font-family: "Roboto", serif;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-weight: 700;
+}
+.container-button button.active,
+.container-button button:focus {
+  outline-color: transparent;
+  outline-style:solid;
+  background-color: transparent;
+  box-shadow: 0 0 0 4px var(--color-primary);
+  transition: 0.2s;
+}
+
+.big-countdown-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  height: 280px;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 5rem;
+  width: 420px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #0d0514;
+  font-family: "Roboto", serif;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.countdown-container p {
+  color: var(--color-text);
+  font-family: "Orbitron", sans-serif;
+}
+
+.button-countdown button {
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0.5em 2em 2em 2em;
+  padding: 10px 20px 10px 20px;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  width: 150px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.container-settings {
+  background-color: var(--color-text);
+  color: var(--color-primary);
+  font-weight: 800;
+  width: 100%;
+}
+
+.container-general-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin: 10px;
+  padding: 1em;
+  font-family: "Roboto", serif;
+  width: 280px;
+  background-color: #0d0514;
+  border: 10px solid var(--color-primary);
+  color: var(--color-text);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;}
+
+.slider-container p {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin:10px;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Styles pour le range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--color-primary)
+  outline: none;
+  margin: 10px 0;
+}
+
+/* Couleur de la barre remplie */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--color-text); /* Couleur de la barre remplie */
+}
+
+/* Curseur du slider */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 20px;
+  border-radius: 10%;
+  background: var(--color-primary);
+  box-shadow: 0 0 2px var(--color-primary);
+}
+
+/* Couleur du curseur au survol */
+input[type="range"]:hover::-webkit-slider-thumb {
+  background: #2e0403;
+}
+
+
+.footer {
+  color: var(--color-text);
+  font-family: "Orbitron", sans-serif;
+}
+
+ .icon {
+  font-size: 3em;
+  }
+
+  .footer{
+    padding: 0.5em;
+  }
